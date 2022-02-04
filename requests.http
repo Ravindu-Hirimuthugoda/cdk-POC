@@ -1,0 +1,22 @@
+@endpoint = https://3fzc1t1ldj.execute-api.eu-west-1.amazonaws.com/prod
+
+GET {{endpoint}}/hello
+###
+
+GET {{endpoint}}/spaces?location=WSO2
+###
+
+
+POST {{endpoint}}/spaces/
+Content-Type: application/json
+
+{
+    "location": "WSO2",
+    "description": "Dream place to work"
+}
+####
+
+GET {{endpoint}}/spaces?spaceId=b16a17d8-7972-4d85-b723-748f9729edab
+##
+
+
